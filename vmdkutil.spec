@@ -22,7 +22,7 @@ Narzędzie do rzadkich dysków VMware VMDK.
 %setup -q -c -T
 
 cp -p %{SOURCE0} vmdkutil.cpp
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 %{__cxx} %{rpmldflags} %{rpmcxxflags} %{rpmcppflags} -o vmdkutil vmdkutil.cpp
